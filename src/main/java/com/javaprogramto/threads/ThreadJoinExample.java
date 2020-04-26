@@ -9,13 +9,13 @@ public class ThreadJoinExample {
 		PrintNumbers t3 = new PrintNumbers(21, 30);
 
 		t1.start();
-		t1.join();
+		t1.join(500);
 
 		t2.start();
-		t2.join();
+		t2.join(500);
 
 		t3.start();
-		t3.join();
+		t3.join(500);
 
 		System.out.println("All threads completed excution.");
 		System.out.println(Thread.currentThread().getName() + " complete execution");
@@ -37,6 +37,11 @@ class PrintNumbers extends Thread {
 	public void run() {
 		for (int i = start; i <= end; i++) {
 			System.out.println(Thread.currentThread().getName() + " - " + i);
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 		System.out.println(Thread.currentThread().getName() + " thread execution completed.");
 	}
