@@ -8,8 +8,9 @@ public class SwapNumbersWIthoutThirdVariable {
 		int secondNumber = 20;
 		
 
-		System.out
-				.println("Before swapping two numbers : firstNumber " + firstNumber + ", secondNumber " + secondNumber);
+		System.out.println("Before swapping two numbers : firstNumber "
+		+ firstNumber + ", secondNumber " + secondNumber);
+		
 		
 
 		firstNumber = firstNumber + secondNumber;
@@ -17,7 +18,7 @@ public class SwapNumbersWIthoutThirdVariable {
 		firstNumber = firstNumber - secondNumber;
 		
 
-		System.out
-				.println("After swapping two numbers : firstNumber " + firstNumber + ", secondNumber " + secondNumber);
+		System.out.println("After swapping two numbers : firstNumber "
+		+ firstNumber + ", secondNumber " + secondNumber);
 	}
 }
