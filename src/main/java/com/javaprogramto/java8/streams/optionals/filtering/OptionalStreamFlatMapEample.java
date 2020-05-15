@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class OptionalStreamFlatMapEample {
 
@@ -22,7 +21,8 @@ public class OptionalStreamFlatMapEample {
 
         List<String> nonEmptyValuesList = optionalList
                 .stream()
-                .flatMap(Optional.stream())
+                //.flatMap(Optional::stream())
+                .map(o -> o.get())
                 .collect(Collectors.toList());
 
         System.out.println(nonEmptyValuesList);
