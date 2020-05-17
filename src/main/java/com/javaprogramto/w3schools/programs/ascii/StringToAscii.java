@@ -1,5 +1,6 @@
 package com.javaprogramto.w3schools.programs.ascii;
 
+
 public class StringToAscii {
 
     public static void main(String[] args) {
