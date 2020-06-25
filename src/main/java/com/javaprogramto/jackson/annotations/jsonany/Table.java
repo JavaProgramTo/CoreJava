@@ -21,7 +21,7 @@ public class Table {
         this.id = id;
     }
 
-    //@JsonAnyGetter
+    @JsonAnyGetter
     public String getModelName() {
         return modelName;
     }
