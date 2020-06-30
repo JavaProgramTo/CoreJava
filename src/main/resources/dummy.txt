@@ -1,0 +1,5 @@
+Line 1 : Hello Reader
+Line 2 : Welcome to the java programt to . com blog
+Line 3 : Here you find the articles on the java concepts
+Line 4 : This is example to read this file line by line
+Line 5 : Let us see the examples on Java 8 Streams API.
