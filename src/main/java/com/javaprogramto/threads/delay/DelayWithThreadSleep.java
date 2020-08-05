@@ -1,4 +1,4 @@
-package com.javaprogramto.thread.delay;
+package com.javaprogramto.threads.delay;
 
 public class DelayWithThreadSleep {
 

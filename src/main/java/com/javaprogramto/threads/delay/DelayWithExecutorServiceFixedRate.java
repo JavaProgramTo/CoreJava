@@ -1,4 +1,4 @@
-package com.javaprogramto.thread.delay;
+package com.javaprogramto.threads.delay;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
