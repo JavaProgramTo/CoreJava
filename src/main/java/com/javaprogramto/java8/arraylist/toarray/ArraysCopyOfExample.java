@@ -22,7 +22,7 @@ public class ArraysCopyOfExample {
         Object[] objectList = listOfStrings.toArray();
         String[] stringArray =  Arrays.copyOf(objectList,objectList.length,String[].class);
 
-        
+
         // Printing the values of Array.
         for (int i = 0; i < stringArray.length; i++) {
             System.out.println("String value at index "+i+" is "+stringArray[i]);
