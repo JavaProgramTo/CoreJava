@@ -7,7 +7,7 @@ public class CurrentDirectoryFileSystemsExample {
 
 	public static void main(String[] args) {
 
-		// Current location from path.
+		// Current location from FileSystems.
 		Path currentPath = FileSystems.getDefault().getPath(".");
 		
 		// getting the location from Path.toAbsolutePath()

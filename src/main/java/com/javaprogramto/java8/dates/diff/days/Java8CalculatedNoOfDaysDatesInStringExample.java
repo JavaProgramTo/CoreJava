@@ -1,11 +1,8 @@
 package com.javaprogramto.java8.dates.diff.days;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.temporal.ChronoUnit;
-import java.util.Date;
 
 public class Java8CalculatedNoOfDaysDatesInStringExample {
 

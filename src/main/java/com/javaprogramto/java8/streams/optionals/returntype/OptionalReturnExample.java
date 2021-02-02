@@ -33,6 +33,7 @@ public class OptionalReturnExample {
 		}
 
 		getNameById(400).ifPresent(value -> System.out.println("id  400 value is  : " + value));
+		
 		getNameById(900).ifPresentOrElse(value -> System.out.println("id  900 value is  : " + value),
 				() -> System.out.println("id 900 not found"));
 

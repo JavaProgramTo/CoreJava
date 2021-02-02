@@ -19,7 +19,7 @@ public class JavaSortLargest {
 		int[] arr2 = { 900, -100, 500, 15000, 8377 };
 		System.out.println("Input array 2: " + Arrays.toString(arr2));
 
-		// using arrays.sort() method.
+		// using arrays.sort() method.a
 		largest = sortLargest(arr2);
 
 		System.out.println("largest value : " + largest);

@@ -1,10 +1,8 @@
 package com.javaprogramto.java8.optional;
 
-import java.util.Optional;
-
 public class OptionalObjectCreationExample {
 	public static void main(String[] args) {
-
+/*
 		// creating an empty optional object
 		Optional<Void> emptyOptional = Optional.empty();
 
@@ -25,5 +23,7 @@ public class OptionalObjectCreationExample {
 		// Passing null to  of() method.
 		Optional.of(null);
 
+
+ */
 	}
 }

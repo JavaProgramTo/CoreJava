@@ -23,6 +23,7 @@ public class DistinctByMapExample {
 		Map<Integer, Customer> mapIdCustomer = customers.stream()
 				.collect(Collectors.toMap(Customer::getId, c -> c, (c1, c2) -> c1));
 
+		// printing the map
 		System.out.println("Final map after eliminating the duplicates - "+mapIdCustomer);
 
 	}

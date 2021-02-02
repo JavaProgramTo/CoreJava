@@ -26,6 +26,7 @@ public class LocalDateAdjustIntoExample {
 		System.out.println("date2 : " + date2);
 		System.out.println("date3 : " + date3);
 
+		// adjusting the date1 and date2 values using adjustInto() method.
 		date1 = (ZonedDateTime) date3.adjustInto(date1);
 		date2 = (LocalDateTime) date3.adjustInto(date2);
 

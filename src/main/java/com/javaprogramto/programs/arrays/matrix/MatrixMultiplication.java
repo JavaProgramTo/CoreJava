@@ -12,7 +12,7 @@ public class MatrixMultiplication {
 		// Matrix 1 rows and columns length
 		int rows1 = matrix1.length;
 		int columns1 = matrix1[0].length;
-		
+
 		// Matrix 2 rows and columns length
 		int rows2 = matrix2.length;
 		int columns2 = matrix2[1].length;
@@ -25,7 +25,7 @@ public class MatrixMultiplication {
 			for (int j = 0; j < columns2; j++) {
 				for (int k = 0; k < columns1; k++) {
 					result[i][j] += matrix1[i][k] * matrix2[k][j];
-                }
+				}
 			}
 		}
 

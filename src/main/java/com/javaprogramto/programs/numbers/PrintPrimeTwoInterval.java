@@ -6,7 +6,7 @@ public class PrintPrimeTwoInterval {
 
 		// declaring two integer variables for low and high
 		int low = 20;
-		int high = 30;
+		int high = 80;
 
 		// run the loop from low to till high
 		while (low <= high) {
