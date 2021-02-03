@@ -74,13 +74,20 @@ public class SortHashMapByValues {
 		
 		// sorting by method reference
 		
-		// descending order
+		// sorting using method ref
 		Map<String, Integer> sortedMapInDescendingOrder = namesAges.entrySet()
 															.stream()
 															.sorted(Collections.reverseOrder(Entry.comparingByValue()))
 															.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
 																	(entry1, entry2) -> entry2, LinkedHashMap::new));
 
+
+		Map<String, Integer> sortedMapIAscendingOrder = namesAges.entrySet()
+															.stream()
+															.sorted(Collections.reverseOrder(Entry.comparingByValue()))
+															.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+																	(entry1, entry2) -> entry2, LinkedHashMap::new));
+		
 	}
 
 }
