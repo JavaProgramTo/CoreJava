@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.tuple.Pair;
+
 public class GroupingByMultipleFieldsExample {
 
 	public static void main(String[] args) {
@@ -24,26 +26,31 @@ public class GroupingByMultipleFieldsExample {
 		// group by - multiple fields
 		// Grouping by designation and Gender two properties and need to get the count.
 
-		Map<String, Map<String, Long>> multipleFieldsMap = employeesList.stream()
-				.collect(
-						Collectors.groupingBy(Employee::getDesignation, 
-								Collectors.groupingBy(Employee::getGender, 
-										Collectors.counting())));
+		Map<String, Map<String, Long>> multipleFieldsMap = employeesList.stream().collect(Collectors.groupingBy(
+				Employee::getDesignation, Collectors.groupingBy(Employee::getGender, Collectors.counting())));
 
 		// printing the count based on the designation and gender.
 		System.out.println("Group by on multiple properties" + multipleFieldsMap);
-		
+
 		// Example 2
 		// group by - multiple fields
 		// Grouping by designation and Gender two properties and need to get the count.
 
 		Map<String, Map<String, List<Employee>>> multipleFieldsMapList = employeesList.stream()
-				.collect(
-						Collectors.groupingBy(Employee::getDesignation, 
-								Collectors.groupingBy(Employee::getGender)));
+				.collect(Collectors.groupingBy(Employee::getDesignation, Collectors.groupingBy(Employee::getGender)));
 
 		// printing the count based on the designation and gender.
 		System.out.println("Group by on multiple properties and Map key as List" + multipleFieldsMapList);
+
+		// Example 3
+		// group by - multiple fields
+		// Grouping by designation and Gender two properties with Pair.of()
+
+		Map<Pair<String, String>, Long> multipleFieldsMapPair = employeesList.stream()
+				.collect(Collectors.groupingBy(e -> Pair.of(e.getDesignation(), e.getGender()), Collectors.counting()));
+
+		// printing the count based on the designation and gender.
+		System.out.println("Group by on multiple fields with Pair - " + multipleFieldsMapPair);
 
 	}
 }

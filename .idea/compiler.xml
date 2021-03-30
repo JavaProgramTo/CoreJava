@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="corejava" />
+        <module name="corejava (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="corejav (1)" target="1.5" />
+      <module name="corejav (2) (com.javaprogramtto)" target="1.8" />
+      <module name="corejava (2)" target="1.5" />
+      <module name="corejava (3)" target="1.8" />
+      <module name="corejava (3) (com.javaprogramtto)" target="1.8" />
+      <module name="maven-archiver" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
