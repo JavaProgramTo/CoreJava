@@ -4,7 +4,7 @@ public class StringToFloatExample1 {
 
 	public static void main(String[] args) {
 
-		String floatValueInString1 = "789.12F3";
+		String floatValueInString1 = "-789.123F";
 
 		float floatValue1 = Float.parseFloat(floatValueInString1);
 
