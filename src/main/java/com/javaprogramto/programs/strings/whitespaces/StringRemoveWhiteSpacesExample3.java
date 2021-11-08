@@ -23,7 +23,6 @@ public class StringRemoveWhiteSpacesExample3 {
 
 		System.out.println("\nInput str 2 : " + string2);
 		System.out.println("Output str 2 " + output2);
-
 	}
 
 }
