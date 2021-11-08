@@ -1,9 +1,8 @@
 package com.javaprogramto.programs.strings.joining;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
+import org.apache.commons.lang3.StringUtils;
 
-public class JoiningStringDelimiterExample4 {
+public class JoiningStringDelimiterExample5 {
 
 	public static void main(String[] args) {
 
@@ -16,11 +15,17 @@ public class JoiningStringDelimiterExample4 {
 		String output2 = stringCollectorsJoiningWithDelimiter("**", "this", "is", "second", "input");
 		System.out.println("Ouptut 2 : " + output2);
 
+		String out = "";
+
+		for (int i = 0; i < 100000; i++) {
+			out += "new value";
+		}
+
 	}
 
 	private static String stringCollectorsJoiningWithDelimiter(String delimiter, String... strings) {
 
-		String output = Arrays.stream(strings).collect(Collectors.joining(delimiter));
+		String output = StringUtils.join(strings, delimiter);
 
 		return output;
 	}
