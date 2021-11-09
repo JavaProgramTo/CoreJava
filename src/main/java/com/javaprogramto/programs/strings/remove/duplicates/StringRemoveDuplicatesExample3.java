@@ -11,10 +11,10 @@ public class StringRemoveDuplicatesExample3 {
 
 		String orignalString = "world world";
 
-		StringBuilder builder = new StringBuilder();
-		Set<Character> set = new HashSet<>();
-
-		String output = Arrays.asList(orignalString.split("")).stream().distinct().collect(Collectors.joining());
+		String output = Arrays.asList(orignalString.split(""))
+								.stream()
+								.distinct()
+								.collect(Collectors.joining());
 
 		System.out.println("Original String : " + orignalString);
 		System.out.println("After removing the duplicates : " + output);
