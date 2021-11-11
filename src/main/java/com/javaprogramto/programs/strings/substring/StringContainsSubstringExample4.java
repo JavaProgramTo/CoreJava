@@ -1,7 +1,5 @@
 package com.javaprogramto.programs.strings.substrin;
 
-import java.util.regex.Pattern;
-
 import org.apache.commons.lang3.StringUtils;
 
 public class StringContainsSubstringExample4 {
