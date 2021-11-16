@@ -21,7 +21,5 @@ public class CharToStringExample3 {
 		char ch2 = 'b';
 		String returnedString3 = "" + ch2;
 		System.out.println("Returned string 3 : " + returnedString3);
-
 	}
-
 }
