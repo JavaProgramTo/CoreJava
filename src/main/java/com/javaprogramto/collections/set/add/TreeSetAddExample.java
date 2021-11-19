@@ -15,6 +15,6 @@ public class TreeSetAddExample {
 		set.add(50);
 		set.add(300);
 
-		System.out.println("TreeSet values : " + set);
+		System.out.println("TreeSet values are sorted : " + set);
 	}
 }
