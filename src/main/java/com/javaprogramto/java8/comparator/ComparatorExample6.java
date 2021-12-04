@@ -23,21 +23,42 @@ public class ComparatorExample6 {
 				+ teacher.getSubject() + ", exp - " + teacher.getExperience()));
 
 		// using streams.sort
+
+		
+		// way 1 - comparator with method ref and comparing() and thenComparing() method.
 		Comparator<Teacher> subjectExpComparator1 = Comparator.comparing(Teacher::getSubject)
 				.thenComparing(Teacher::getExperience);
 
 		List<Teacher> sortedList1 = teachers.stream().sorted(subjectExpComparator1).collect(Collectors.toList());
 
-		Comparator<Teacher> subjectComparator2 = (t1, t2) -> {
-			
+		// way 2 - lambda with comparator 
+		Comparator<Teacher> subjectExpComparator2 = (t1, t2) -> {
+
 			int subjectCompare = t1.getSubject().compareTo(t2.getSubject());
-			int expCompare = Integer.valueof(t1.getExperience()).compareTo(t2.getExperience());
-			return t1.getSubject().compareTo(t2.getSubject());
+			int expCompare = Integer.valueOf(t1.getExperience()).compareTo(t2.getExperience());
+			return subjectCompare == 0 ? expCompare : subjectCompare;
 		};
 
-		List<Teacher> sortedList2 = teachers.stream().sorted(subjectComparator2).collect(Collectors.toList());
+		List<Teacher> sortedList2 = teachers.stream().sorted(subjectExpComparator1).collect(Collectors.toList());
+
+		// way 3 - with anonymous comparator
+		Comparator<Teacher> subjectExpComparator3 = new Comparator<Teacher>() {
+
+			@Override
+			public int compare(Teacher o1, Teacher o2) {
+				int subjectCompare = t1.getSubject().compareTo(t2.getSubject());
+				int expCompare = Integer.valueOf(t1.getExperience()).compareTo(t2.getExperience());
+				return subjectCompare == 0 ? expCompare : subjectCompare;
+			}
+		};
+
+		List<Teacher> sortedList3 = teachers.stream().sorted(subjectExpComparator3).collect(Collectors.toList());
 
 		// using collections.sort
+		
+		Collections.sort(teachers, subjectExpComparator1);
+		Collections.sort(teachers, subjectExpComparator2);
+		Collections.sort(teachers, subjectExpComparator3);
 
 		System.out.println("\nTeachers object before sorting");
 		teachers.forEach(teacher -> System.out.println("Teacher name - " + teacher.getName() + ", subject - "

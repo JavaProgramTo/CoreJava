@@ -21,7 +21,9 @@ public class ComparatorExample2 {
 		teachers.forEach(teacher -> System.out.println("Teacher name - " + teacher.getName() + ", subject - "
 				+ teacher.getSubject() + ", exp - " + teacher.getExperience()));
 
-		Collections.sort(teachers, new SubjectExperienceComparator());
+		Comparator<Teacher> subjectComparator = Comparator.comparing(Teacher::getSubject);
+
+		Collections.sort(teachers, subjectComparator);
 
 		System.out.println("\nTeachers object before sorting");
 		teachers.forEach(teacher -> System.out.println("Teacher name - " + teacher.getName() + ", subject - "
