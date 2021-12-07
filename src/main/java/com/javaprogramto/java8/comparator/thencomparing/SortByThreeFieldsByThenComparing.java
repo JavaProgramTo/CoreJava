@@ -28,13 +28,14 @@ public class SortByThreeFieldsByThenComparing {
 		Comparator<Author> lastNameComparator = Comparator.comparing(Author::getLastName);
 
 		// thenComparing() method to merge 3 comparators in chain.
-		Comparator<Author> firstMiddleNamesComparator = firstNameComparator.thenComparing(middleNameComparator)
+		Comparator<Author> fullNamesComparator = firstNameComparator.thenComparing(middleNameComparator)
 				.thenComparing(lastNameComparator);
 
 		System.out.println("Before sorting by 3 fields");
 		authors.forEach(a -> System.out.println(a));
 
-		Collections.sort(authors, firstMiddleNamesComparator);
+		Collections.sort(authors, fullNamesComparator);
+		authors.sort(fullNamesComparator);
 
 		System.out.println("after sorting merged comparator");
 		authors.forEach(a -> System.out.println(a));
