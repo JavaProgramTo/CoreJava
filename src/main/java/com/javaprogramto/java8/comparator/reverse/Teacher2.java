@@ -1,7 +1,7 @@
 package com.javaprogramto.java8.comparator.reverse;
 
-public class Teacher2 implements Comparable<Teacher2>{
-
+public class Teacher2 //implements Comparable<Teacher2>{
+{
 	String name;
 	String subject;
 	int experience;

@@ -26,7 +26,7 @@ public class ComparatorReverse6 {
 		System.out.println("\nSorted by subject ascending order");
 		sortBynameList.forEach(t -> System.out.println(t.getSubject()));
 
-		sortBynameList = Teacher2s.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+		sortBynameList = Teacher2s.stream().sorted().collect(Collectors.toList());
 
 		System.out.println("\nSorted by subject descending order ");
 		sortBynameList.forEach(t -> System.out.println(t.getSubject()));
