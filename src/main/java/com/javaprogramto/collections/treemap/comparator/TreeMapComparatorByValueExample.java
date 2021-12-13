@@ -10,6 +10,7 @@ public class TreeMapComparatorByValueExample {
 
 	public static void main(String[] args) {
 
+		// sorted set with the custom comparator
 		SortedSet<Map.Entry<Customer, Integer>> sortedset = new TreeSet<>(
 				new Comparator<Map.Entry<Customer, Integer>>() {
 					@Override
@@ -25,6 +26,8 @@ public class TreeMapComparatorByValueExample {
 		customerAgeMap.put(new Customer(135, "A"), 40);
 		customerAgeMap.put(new Customer(130, "C"), 50);
 
+		// adding treemap values to the treeset.
+		
 		sortedset.addAll(customerAgeMap.entrySet());
 
 		System.out.println("java 8 - treemap sort by value - " + sortedset);
