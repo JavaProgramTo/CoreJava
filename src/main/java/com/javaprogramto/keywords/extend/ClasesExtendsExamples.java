@@ -22,7 +22,12 @@ class HondaCar extends Car {
 		return this.noOfWheels;
 	}
 }
-
+/*
 class HybridCar extends Car , HondaCar{
+
+}
+*/
+
+class SkodaCar extends Car {
 
 }

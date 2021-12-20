@@ -1,28 +1,39 @@
 package com.javaprogramto.keywords.extend;
 
-public class ClasesExtendsExamples {
+import java.util.Calendar;
+
+public class FinalClasesExtendsExamples {
 
 	public static void main(String[] args) {
 
-		HondaCar hondaCar = new HondaCar();
-		int noOfWheels = hondaCar.getNoOfWheels();
-		System.out.println("Honda car wheels : " + noOfWheels);
-
 	}
 }
 
-class Car {
+final class Calculator {
 
-	int noOfWheels = 4;
-}
-
-class HondaCar extends Car {
-
-	public int getNoOfWheels() {
-		return this.noOfWheels;
+	public int sum(int a, int b) {
+		return a + b;
 	}
+
+	public int substract(int a, int b) {
+		return a - b;
+	}
+
+	public int multiply(int a, int b) {
+		return a * b;
+	}
+
+	public int divide(int a, int b) {
+		return a / b;
+	}
+
+	public int reminder(int a, int b) {
+		return a % b;
+	}
+
 }
 
-class HybridCar extends Car , HondaCar{
-
+class MyCalculator extends Calendar{
+	
+	
 }
