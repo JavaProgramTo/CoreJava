@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ArrayListReverseOrder2 {
+public class ArrayListReverseOrderJava8 {
 
 	public static void main(String[] args) {
 

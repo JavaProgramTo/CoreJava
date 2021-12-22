@@ -11,7 +11,9 @@ public class FInalVaraibleExamples {
 
 		// final local variable with value reassignment
 		final int j = 10;
-		j = 20; // compile time error
+
+		// uncomment the below line to see compile time error 
+		//j = 20; // compile time error
 		System.out.println("final j = " + j);
 	}
 

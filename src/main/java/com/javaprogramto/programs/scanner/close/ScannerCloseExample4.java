@@ -2,7 +2,7 @@ package com.javaprogramto.programs.scanner.close;
 
 import java.util.Scanner;
 
-public class ScannerCloseExample2 {
+public class ScannerCloseExample4 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

@@ -21,15 +21,19 @@ class Car {
 }
 
 class FordCar extends Car {
-
-	public void fogLightsOn() {
+	// uncomment the below line to see compile time error
+	/*public void fogLightsOn() {
 		System.out.println("Lights are turned off");
 	}
+	*/
 }
 
 class HondaCar extends Car {
 
+	// uncomment the below line to see compile time error
+	/*
 	public void fogLightsOn() {
 		System.out.println("Lights are turned off permanently");
 	}
+	*/
 }

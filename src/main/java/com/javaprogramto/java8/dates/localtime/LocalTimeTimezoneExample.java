@@ -2,7 +2,7 @@ package com.javaprogramto.java8.dates.localtime;
 
 import java.time.LocalTime;
 
-public class LocalTimeGetTimePartsExample {
+public class LocalTimeTimezoneExample {
 	public static void main(String[] args) {
 
 		// Getting time parts from LocalTime object

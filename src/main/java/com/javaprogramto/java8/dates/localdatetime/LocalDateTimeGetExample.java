@@ -3,7 +3,7 @@ package com.javaprogramto.java8.dates.localdatetime;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class LocalDateTimeToStringExample {
+public class LocalDateTimeGetExample {
 
 	public static void main(String[] args) {
 		// Getting current date and time using now() method

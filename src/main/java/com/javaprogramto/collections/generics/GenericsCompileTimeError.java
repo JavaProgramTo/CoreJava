@@ -9,6 +9,7 @@ public class GenericsCompileTimeError {
 		
 		List<Integer> integers = null;
 		
-		integers = new ArrayList<int>();
+		// uncomment to see the error
+		//integers = new ArrayList<int>();
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ComparatorExample2 {
+public class ComparatorExample4 {
 
 	public static void main(String[] args) {
 
@@ -34,7 +34,7 @@ public class ComparatorExample2 {
 }
 
 // Custom comparator to sort Teacher objects by subject they teach and their experience level
-class SubjectExperienceComparator implements Comparator<Teacher> {
+class SubjectExperienceComparato2 implements Comparator<Teacher> {
 
 	@Override
 	public int compare(Teacher t1, Teacher t2) {

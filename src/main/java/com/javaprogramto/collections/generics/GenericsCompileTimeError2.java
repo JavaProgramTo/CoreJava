@@ -1,7 +1,6 @@
 package com.javaprogramto.collections.generics;
 
 import java.util.Map;
-import java.util.TreeMap;
 
 import com.javaprogramto.models.Employee;
 
@@ -11,6 +10,7 @@ public class GenericsCompileTimeError2 {
 		
 		Map<Employee, Boolean> integers = null;
 		
-		integers = new TreeMap<Employee, boolean>();
+		// uncomment the below line to see compile time error
+		//integers = new TreeMap<Employee, boolean>();
 	}
 }

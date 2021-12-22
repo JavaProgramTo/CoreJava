@@ -9,7 +9,7 @@ import java.time.LocalDate;
  * @author javaprogramto.com
  *
  */
-public class LocalDateAdjustIntoExample {
+public class LocalDateAdjustIntoExample2 {
 
 	public static void main(String[] args) {
 
